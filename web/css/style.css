@@ -9,7 +9,16 @@ body {
   padding: 55px;
 }
 
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: grid;
   grid-template-columns: repeat(4, auto);
   gap: 20px;
@@ -22,13 +31,15 @@ body {
   text-transform: uppercase;
   color: #000;
   background: #fff;
-  padding: 15px 30px;
+  padding: 1rem 2rem;
   border-radius: 5px;
+  border: 2px solid transparent;
+  display: block;
 }
 
 .menu a:hover {
-  border: 2px solid #ee2211;
-  padding: 13px 28px;
+  border-color:#ee2211;
+  /* padding: 0.875rem 1.875rem; */
 }
 
 .conteudo1 {
@@ -71,17 +82,17 @@ body {
   font-size: 2rem;
 }
 
-.conteudo1_info a {
+.botao {
   font-size: 1rem;
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
   background: #ee2211;
-  padding: 15px 25px;
+  padding: 0.94rem 1.56rem;
   border-radius: 5px;
 }
 
-.conteudo1_info a:hover {
+.botao:hover {
   background: #900;
 }
 
