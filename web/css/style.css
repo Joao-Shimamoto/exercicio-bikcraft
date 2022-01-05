@@ -17,12 +17,18 @@ body {
 }
 
 .menu a {
+  font-size: 1rem;
   text-decoration: none;
   text-transform: uppercase;
   color: #000;
   background: #fff;
   padding: 15px 30px;
   border-radius: 5px;
+}
+
+.menu a:hover {
+  border: 2px solid #ee2211;
+  padding: 13px 28px;
 }
 
 .conteudo1 {
@@ -42,17 +48,31 @@ body {
   width: 400px;
 }
 
+.conteudo1_info::before {
+  content: "";
+  z-index: 3;
+  border-radius: 10px;
+  background: #ee2211;
+  height: 5px;
+  width: 50px;
+  left: 430px;
+  top: -50px;
+  display: block;
+  position: relative;
+}
+
 .conteudo1_info p {
-  font-size: 20px;
+  font-size: 1.2rem;
   margin-bottom: 40px;
 }
 
 .conteudo1_info h1 {
   margin: 0;
+  font-size: 2rem;
 }
 
 .conteudo1_info a {
-  font-size: 16px;
+  font-size: 1rem;
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
@@ -61,12 +81,16 @@ body {
   border-radius: 5px;
 }
 
+.conteudo1_info a:hover {
+  background: #900;
+}
+
 .conteudo1_foto {
   position: relative;
   height: 340px;
-  top: -5px;
+  /* top: -5px; */
 }
-
+/* 
 .separador {
   z-index: 1;
   border-radius: 10px;
@@ -76,13 +100,15 @@ body {
   top: 40px;
   height: 5px;
   position: relative;
-}
+} */
 
 .vantagens {
   color: #c6c6c6;
-  font-size: 64px;
+  font-size: 4rem;
   text-align: right;
   text-transform: uppercase;
+  padding: 40px;
+  background-image: url("../img/onda.svg");
 }
 
 .conteudo2 {
@@ -90,34 +116,45 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  gap: 60px;
+  /* gap: 60px; */
   margin: 0 auto;
 }
 
 .icones {
   background: #fff;
-  padding: 40px 85px 10px 85px;
+  padding: 20px 80px 20px 70px;
 }
 
 .info_icone {
   display: grid;
   grid-template-columns: 40px 300px;
+  padding: 20px 0 20px 20px;
+}
+
+.info_icone:nth-child(odd) {
+  background-color: #f7f7f7;
+}
+
+.info_icone:hover {
+  border-left: 4px solid #ee2211;
+  padding-left: 11px;
+  grid-template-columns: 40px 305px;
 }
 
 .titulo_vantagem {
   grid-column: 2;
   margin: 0;
-  font-size: 20px;
+  font-size: 1.2rem;
 }
 
 .descricao_vantagem {
-  margin: 10px 0 40px 0;
-  font-size: 20px;
+  margin: 10px 0;
+  font-size: 1.2rem;
   grid-column: 2;
 }
 
 footer {
-  font-size: 20px;
+  font-size: 1.2rem;
   text-align: center;
   margin-top: 60px;
   background: #fff;
