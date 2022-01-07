@@ -1,2 +1,1 @@
-Este é um exercício do curso da Origamid: Html e Css para Iniciantes.
-# exercicio-bikcraft
+Exercício Curso Origamid -  Html e Css para Iniciantes.
