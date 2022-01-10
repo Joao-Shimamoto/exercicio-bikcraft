@@ -320,7 +320,6 @@ footer {
 
   .conteudo2 {
     position: relative;
-    max-width: 380px;
     max-width: 510px;
     grid-template-columns: 1fr;
   }
@@ -357,5 +356,182 @@ footer {
     font-size: 1rem;
     margin-top: 30px;
     padding: 5px;
+  }
+}
+
+/*Estilo para smartphone 2*/
+@media only screen and (min-width: 310px) and (max-width: 506px) {
+  body {
+    width: 280px;
+    margin: 0;
+    background: #f7f7f7;
+    font-family: Arial, Arial, Helvetica, sans-serif;
+  }
+
+  .logo {
+    text-align: center;
+    padding: 20px 0;
+    margin: 0 auto;
+    width: 100vw;
+  }
+
+  .menu-g {
+    width: 100vw;
+    padding: 0;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+  }
+
+  .menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .menu a {
+    font-size: 0.9rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    background: #fff;
+    padding: 0.8rem 1.6rem;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    display: block;
+  }
+
+  .conteudo1 {
+    padding: 0;
+    height: auto;
+    margin: 10px auto;
+    width: 100vw;
+    display: grid;
+    /* grid-template-columns: 200px; */
+    justify-items: center;
+    align-items: center;
+    background: #fff;
+  }
+
+  .conteudo1_info {
+    text-align: left;
+    width: 250px;
+    /* max-width: 100vw; */
+  }
+
+  .conteudo1_info::before {
+    display: none;
+  }
+
+  .conteudo1_info p {
+    font-size: 1rem;
+    margin-bottom: 40px;
+  }
+
+  .conteudo1_info h1 {
+    font-size: 1.4rem;
+  }
+
+  .botao {
+    font-size: 0.8rem;
+    padding: 0.8rem 1.6rem;
+    border-radius: 5px;
+  }
+
+  .conteudo1_foto {
+    background: blue;
+    padding: 0;
+    height: fit-content;
+  }
+
+  .conteudo1_foto img {
+    width: 100vw;
+    padding: 0;
+    margin: 0 auto;
+    object-fit: scale-down;
+  }
+
+  .conteudo1_foto img:hover {
+    transform: none;
+  }
+
+  .vantagens {
+    color: #c6c6c6;
+    display: grid;
+    font-size: 2rem;
+    text-align: center;
+    padding: 10px 0;
+    margin: 20px 0;
+    background-image: url("../img/onda.svg");
+  }
+
+  .conteudo2 {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin: 0 auto;
+  }
+
+  .icones {
+    background: #fff;
+    padding: 0;
+    width: 100vw;
+    text-align: center;
+    margin: 0;
+    display: grid;
+    justify-content: center;
+  }
+
+  .info_icone {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px 0;
+    margin: 0;
+  }
+
+  .info_icone:hover {
+    border-left: 0;
+    padding-left: 0;
+    grid-template-columns: 100vw;
+  }
+
+  .info_icone:nth-child(odd) {
+    background-color: #fff;
+  }
+
+  .info_icone:nth-child(even) {
+    background-color: #f7f7f7;
+  }
+
+  .icone {
+    display: grid;
+    position: relative;
+    justify-self: center;
+  }
+
+  .titulo_vantagem {
+    grid-column: 1;
+    margin: 5px auto;
+    max-width: 20ch;
+    font-size: 1.2rem;
+  }
+
+  .descricao_vantagem {
+    max-width: 30ch;
+    margin: 0 auto;
+    font-size: 0.9rem;
+    grid-column: 1;
+  }
+
+  footer {
+    width: 100vw;
+    font-size: 0.8rem;
+    margin-top: 20px;
+    padding: 5px 0;
   }
 }
