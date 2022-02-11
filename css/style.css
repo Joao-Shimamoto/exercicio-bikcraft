@@ -1,7 +1,29 @@
+:root {
+  --cor-primaria: #ee2211;
+  --cor-primaria-escura: #900;
+  --fundo-1: #f7f7f7;
+  --fundo-2: #fff;
+  --texto: #000;
+  --cor-subtitulo: #c6c6c6;
+  --onda: url("../img/onda-clara.svg");
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fundo-1: #111;
+    --fundo-2: #000;
+    --texto: #fff;
+    --cor-subtitulo: #7a7a7a;
+    --onda: url("../img/onda-escura.svg");
+  }
+}
+
 body {
   margin: 0;
-  background: #f7f7f7;
+  background: var(--fundo-1);
   font-family: Arial, Arial, Helvetica, sans-serif;
+  color: var(--texto);
 }
 
 .logo {
@@ -29,8 +51,8 @@ ul {
   font-size: 1rem;
   text-decoration: none;
   text-transform: uppercase;
-  color: #000;
-  background: #fff;
+  color: var(--texto);
+  background: var(--fundo-2);
   padding: 1rem 2rem;
   border-radius: 5px;
   border: 2px solid transparent;
@@ -38,7 +60,7 @@ ul {
 }
 
 .menu a:hover {
-  border-color: #ee2211;
+  border-color: var(--cor-primaria);
   /* padding: 0.875rem 1.875rem; */
 }
 
@@ -51,7 +73,7 @@ ul {
   /* gap: 20px; */
   justify-items: center;
   align-items: center;
-  background: #fff;
+  background: var(--fundo-2);
 }
 
 .conteudo1_info {
@@ -63,7 +85,7 @@ ul {
   content: "";
   z-index: 3;
   border-radius: 10px;
-  background: #ee2211;
+  background: var(--cor-primaria);
   height: 5px;
   width: 50px;
   left: 425px;
@@ -87,13 +109,13 @@ ul {
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
-  background: #ee2211;
+  background: var(--cor-primaria);
   padding: 0.94rem 1.56rem;
   border-radius: 5px;
 }
 
 .botao:hover {
-  background: #900;
+  background: var(--cor-primaria-escura);
 }
 
 .conteudo1_foto {
@@ -110,12 +132,12 @@ ul {
 }
 
 .vantagens {
-  color: #c6c6c6;
+  color: var(--cor-subtitulo);
   font-size: 4rem;
   text-align: right;
   text-transform: uppercase;
   padding: 40px;
-  background-image: url("../img/onda.svg");
+  background-image: var(--onda);
 }
 
 .conteudo2 {
@@ -127,7 +149,7 @@ ul {
 }
 
 .icones {
-  background: #fff;
+  background: var(--fundo-2);
   padding: 20px 70px;
 }
 
@@ -160,11 +182,11 @@ ul {
 }
 
 .info_icone:nth-child(odd) {
-  background-color: #f7f7f7;
+  background-color: var(--fundo-1);
 }
 
 .info_icone:hover {
-  border-left: 4px solid #ee2211;
+  border-left: 4px solid var(--cor-primaria);
   padding-left: 11px;
   grid-template-columns: 40px 305px;
 }
@@ -185,7 +207,7 @@ footer {
   font-size: 1.2rem;
   text-align: center;
   margin-top: 60px;
-  background: #fff;
+  background: var(--fundo-2);
   padding: 15px;
 }
 
@@ -271,8 +293,8 @@ footer {
     font-size: 1rem;
     text-decoration: none;
     text-transform: uppercase;
-    color: #000;
-    background: #fff;
+    color: var(--texto);
+    background: var(--fundo-2);
     padding: 1rem 2rem;
     border-radius: 5px;
     border: 2px solid transparent;
@@ -280,7 +302,7 @@ footer {
   }
 
   .menu a:hover {
-    border-color: #ee2211;
+    border-color: var(--cor-primaria);
   }
 
   /* Conteúdo 1 */
@@ -364,7 +386,7 @@ footer {
   body {
     width: 280px;
     margin: 0;
-    background: #f7f7f7;
+    background: var(--fundo-1);
     font-family: Arial, Arial, Helvetica, sans-serif;
   }
 
@@ -396,8 +418,8 @@ footer {
     font-size: 0.9rem;
     text-decoration: none;
     text-transform: uppercase;
-    color: #000;
-    background: #fff;
+    color: var(--texto);
+    background: var(--fundo-2);
     padding: 0.8rem 1.6rem;
     border-radius: 5px;
     border: 2px solid transparent;
@@ -412,7 +434,7 @@ footer {
     display: grid;
     justify-items: center;
     align-items: center;
-    background: #fff;
+    background: var(--fundo-2);
   }
 
   .conteudo1_info {
@@ -440,7 +462,7 @@ footer {
   }
 
   .conteudo1_foto {
-    background: blue;
+    /* background: blue; */
     padding: 0;
     height: fit-content;
   }
@@ -475,7 +497,7 @@ footer {
   }
 
   .icones {
-    background: #fff;
+    background: var(--fundo-2);
     padding: 0;
     width: 100vw;
     text-align: center;
@@ -499,11 +521,11 @@ footer {
   }
 
   .info_icone:nth-child(odd) {
-    background-color: #fff;
+    background-color: var(--fundo-2);
   }
 
   .info_icone:nth-child(even) {
-    background-color: #f7f7f7;
+    background-color: var(--fundo-1);
   }
 
   .icone {
